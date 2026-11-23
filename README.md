@@ -36,6 +36,13 @@ Latency figures are raw client p99. Both runs reported zero client errors.
 Foreground disk reads fell from about 36,629/s to 2.6/s in the warmed run,
 even as compaction I/O increased.
 
+## Read-only check — 1,000 warmed reads/s
+
+The five-minute measurement reached 3.80 ms raw p99 at QUORUM. A separate
+five-minute warm-up at 2,000 reads/s was excluded from the results.
+
+![Raw client latency at 1,000 warmed reads per second](docs/warmed-reads-1000-latency.png)
+
 ## Takeaway
 
 On the same hardware, the warmed workload met the throughput and p99
