@@ -1,0 +1,11 @@
+*.pem
+*.key
+*.ppk
+hosts.txt
+.ssh/
+.env
+.env.*
+known_hosts*
+*Candidate-Brief.pdf
+evidence/raw/
+.DS_Store
