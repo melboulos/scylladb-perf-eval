@@ -21,6 +21,8 @@ minutes. Mean foreground I/O queue wait rose from 10.33 ms to 32.20 ms
 per I/O, while mean execution time stayed around 0.15 ms. Across the run,
 97.69% of database-side cache reads needed data from SSTables.
 
+![Read p99 and foreground I/O queue wait during the full-range benchmark](docs/full-range-queue-and-latency.png)
+
 ## After — reads across a warmed subset
 
 I kept the full dataset and write workload in place. The reader sampled
