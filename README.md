@@ -9,6 +9,10 @@ I preloaded 100 million rows with 1 KiB values, or 102.4 GB of logical value
 data before replication and overhead. Both mixed runs lasted 30 minutes and
 used RF3 and QUORUM on the same AWS cluster with local NVMe.
 
+## Benchmark architecture
+
+![Benchmark architecture showing the loader, ScyllaDB cluster, and monitoring data flow](docs/benchmark-architecture.png)
+
 ## Before — reads across the full dataset
 
 With reads and writes spread across all 100,000 partitions, writes held
