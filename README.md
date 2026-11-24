@@ -38,6 +38,8 @@ and the requested read and write rates stayed the same.
 | Full range | 3,560 | 250.74 ms | 9,999 | 2.42 ms |
 | Warmed subset | 29,999 | 4.39 ms | 9,999 | 3.54 ms |
 
+![Full-range versus warmed mixed benchmark results](docs/mixed-working-set-comparison.png)
+
 Latency figures are raw client p99. Both runs reported zero client errors.
 Foreground disk reads fell from about 36,629/s to 2.6/s in the warmed run,
 even as compaction I/O increased.
